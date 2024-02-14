@@ -4,73 +4,129 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
 
 header{
     height: 100px;
     background-color: black;
-    
+    display: flex;
+    justify-content: end
+}
+
+.header-right{
+    display: flex;
+    color: white;
+    font-size: 25px;
+
+}
+
+p{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.header-right{
+    background-color: rgb(70, 70, 70);
+    height: 30px;
+    border-radius: 4px;
+    padding-left: 5px;
 }
 
 /*-----------------------
     main
 ------------------------*/
 
-main{
-    height: calc(100vh-200px);
-    background-color: black;
-    padding: 0 114px;
-}
-
-img{
-    height: 190px;
-    width: 320px;
-}
-
-.row{
+.layout{
     display: flex;
+    background-color: black;
+    padding: 0 110px;
+    padding-bottom: 10px;
     flex-wrap: wrap;
-    padding: 0;
+
+}
+
+.boxing-mic{
+    display: flex;
+    width: 140px;
+    color: white;
+    align-items: center;
+    position: relative;
+    bottom: 28px;;
+    padding-left: 8px;
+    background: #000000; 
+	opacity: 0.4; 
+}
+
+.user-mic{
+    font-size: 20px;
+    color: white;
+}
+
+.micro{
+    color: white;
 }
 
 
-.col1{
-    width: calc(100% / 7);
-} 
 
-.container{
-    padding: 0;
-    margin: 0;
-    ;
-}
-
-main{
-    padding: 0;
-    margin: 0;
-}
-
-footer{
-    height: 100px;
-    background-color: rgb(34, 34, 34);
-    
-}
 
 /*-----------------------
     footer
 ------------------------*/
 
-.item{
-    font-size: 45px;
+
+.layout{
+    width: 100%;  
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
-.item-white{
+
+
+.layout:last-child{
+    padding-bottom: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: rgb(34, 34, 34);
+}
+
+.item{
+    display: block;
+    font-size: 40px;
     color: white;
 }
 
-.options{
+.footer-left{
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    
+    align-items: center;
+}
+
+.text-item{
+    color: white;
+    display: flex;
+    font-size: 18px;
+}
+
+.footer-center{
+    display: flex;
+    align-items: center;
+}
+
+.item-green{
+    color: rgb(72, 189, 2);
+}
+
+.end-meeting{
+    height: 100px;
+    width: 200px;
+    background-color: rgb(71, 71, 71);
+    color: red;
+    border-style: none;
 }
